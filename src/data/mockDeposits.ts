@@ -1,0 +1,166 @@
+import { PaymentMethod } from '../types';
+
+export interface SeededDepositRecord {
+  id: string;
+  depositorName: string;
+  city: string;
+  amountInr: number;
+  method: PaymentMethod;
+  status: 'Completed' | 'Processing';
+  timestamp: string;
+  transactionRef: string;
+  isUserDeposit?: boolean;
+}
+
+export const SEEDED_DEPOSITS: SeededDepositRecord[] = [
+  {
+    id: 'dep-seed-01',
+    depositorName: 'Rahul Verma',
+    city: 'Mumbai',
+    amountInr: 10000,
+    method: 'UPI (GPay / PhonePe)',
+    status: 'Completed',
+    timestamp: '2 mins ago',
+    transactionRef: 'UPI/2026/8941203920',
+  },
+  {
+    id: 'dep-seed-02',
+    depositorName: 'Pooja Iyer',
+    city: 'Bengaluru',
+    amountInr: 20000,
+    method: 'IMPS / NEFT',
+    status: 'Completed',
+    timestamp: '5 mins ago',
+    transactionRef: 'IMPS/HDFC/992817231',
+  },
+  {
+    id: 'dep-seed-03',
+    depositorName: 'Siddharth Sen',
+    city: 'Kolkata',
+    amountInr: 8500,
+    method: 'Paytm',
+    status: 'Completed',
+    timestamp: '8 mins ago',
+    transactionRef: 'PAYTM/2026/7483920194',
+  },
+  {
+    id: 'dep-seed-04',
+    depositorName: 'Ankit Aggarwal',
+    city: 'Delhi NCR',
+    amountInr: 8700,
+    method: 'Net Banking',
+    status: 'Completed',
+    timestamp: '12 mins ago',
+    transactionRef: 'NETB/ICICI/548291038',
+  },
+  {
+    id: 'dep-seed-05',
+    depositorName: 'Meera Nambiar',
+    city: 'Kochi',
+    amountInr: 2000,
+    method: 'UPI (GPay / PhonePe)',
+    status: 'Completed',
+    timestamp: '15 mins ago',
+    transactionRef: 'UPI/2026/6638291048',
+  },
+  {
+    id: 'dep-seed-06',
+    depositorName: 'Aditya Kulkarni',
+    city: 'Pune',
+    amountInr: 1950,
+    method: 'UPI (GPay / PhonePe)',
+    status: 'Completed',
+    timestamp: '18 mins ago',
+    transactionRef: 'UPI/2026/1129384756',
+  },
+  {
+    id: 'dep-seed-07',
+    depositorName: 'Sunita Reddy',
+    city: 'Hyderabad',
+    amountInr: 899,
+    method: 'IMPS / NEFT',
+    status: 'Completed',
+    timestamp: '22 mins ago',
+    transactionRef: 'NEFT/SBIN/883719204',
+  },
+  {
+    id: 'dep-seed-08',
+    depositorName: 'Deepak Joshi',
+    city: 'Jaipur',
+    amountInr: 45230,
+    method: 'Net Banking',
+    status: 'Completed',
+    timestamp: '25 mins ago',
+    transactionRef: 'NETB/AXIS/447291038',
+  },
+  {
+    id: 'dep-seed-09',
+    depositorName: 'Vikramjit Singh',
+    city: 'Chandigarh',
+    amountInr: 7456,
+    method: 'UPI (GPay / PhonePe)',
+    status: 'Completed',
+    timestamp: '29 mins ago',
+    transactionRef: 'UPI/2026/9028374615',
+  },
+  {
+    id: 'dep-seed-10',
+    depositorName: 'Tanvi Shah',
+    city: 'Ahmedabad',
+    amountInr: 9582,
+    method: 'Net Banking',
+    status: 'Completed',
+    timestamp: '34 mins ago',
+    transactionRef: 'NETB/HDFC/338291047',
+  },
+  {
+    id: 'dep-seed-11',
+    depositorName: 'Kunal Deshmukh',
+    city: 'Nagpur',
+    amountInr: 499,
+    method: 'UPI (GPay / PhonePe)',
+    status: 'Completed',
+    timestamp: '38 mins ago',
+    transactionRef: 'UPI/2026/7728190342',
+  },
+  {
+    id: 'dep-seed-12',
+    depositorName: 'Sneha Roy',
+    city: 'Siliguri',
+    amountInr: 989,
+    method: 'Paytm',
+    status: 'Completed',
+    timestamp: '42 mins ago',
+    transactionRef: 'PAYTM/2026/5549281037',
+  },
+  {
+    id: 'dep-seed-13',
+    depositorName: 'Gaurav Bhatt',
+    city: 'Dehradun',
+    amountInr: 15000,
+    method: 'IMPS / NEFT',
+    status: 'Completed',
+    timestamp: '47 mins ago',
+    transactionRef: 'IMPS/KOTAK/293847102',
+  },
+  {
+    id: 'dep-seed-14',
+    depositorName: 'Nisha Pillai',
+    city: 'Thiruvananthapuram',
+    amountInr: 29506,
+    method: 'UPI (GPay / PhonePe)',
+    status: 'Completed',
+    timestamp: '52 mins ago',
+    transactionRef: 'UPI/2026/6619284730',
+  },
+  {
+    id: 'dep-seed-15',
+    depositorName: 'Ravi Teja',
+    city: 'Visakhapatnam',
+    amountInr: 45854,
+    method: 'UPI (GPay / PhonePe)',
+    status: 'Completed',
+    timestamp: '58 mins ago',
+    transactionRef: 'UPI/2026/3392810475',
+  }
+];

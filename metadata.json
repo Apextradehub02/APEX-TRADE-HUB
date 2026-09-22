@@ -1,0 +1,8 @@
+{
+  "name": "Apex Trade Hub",
+  "description": "Apex Trade Hub – A Sub-Broker of Angel One. Professional real-time trading platform supporting 2,756 clients with 1,500-1,600 daily active traders, live market fluctuations, INR deposits, and real-time P&L tracking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
